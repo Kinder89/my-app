@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color:white;
+  font-family: Rockwell, Georgia, serif;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+.container{
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-size: medium;
+
+    
+}
+
+.card{
+  background-color: rgb(186, 189, 189);
+  border-radius: 20px;
+  display: block;
+}
+
+img{
+  transition: 2s
+}
+
+img:hover{
+ transform: scale(1.4);
+}
+
+      h3{
+        text-align: center;
+        margin-top: 15px;
+      }
+      
+      .btn{
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 8px;
+}
+
+.comment{
+  max-width: 260px;
+}
