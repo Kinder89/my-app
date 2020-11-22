@@ -47,7 +47,7 @@
                     <h6>email: {{ contactForm.value.email | json }}</h6>
                     <p class="comment"  *ngFor="let com of comment;let index = index ">comment: {{ contactForm.value.comment | json }}</p>  
                     <div >
-                        <button type="button" class="btn btn-primary btn-sm" (click)="remove (index)">Delete comment</button>
+                        <button type="button" class="btn btn-primary btn-sm" (click)="remove (comment)">Delete comment</button>
                     </div>
                 </div>
             </div>
