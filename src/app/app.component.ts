@@ -8,10 +8,9 @@ import {FormBuilder , FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'my-app';
-
   contactForm: FormGroup;
-  submitted: boolean;
-  
+  submitted = false;
+
   constructor( private fb: FormBuilder ) { }
 
   ngOnInit() {
@@ -22,28 +21,20 @@ export class AppComponent {
     });
   }
 
-
   get form() {
     return this.contactForm.controls;
   }
 
-
-  comment = [''];
-
+  comment = [];
 
   remove(index) {
     this.comment.splice(index, 1)
   }
   onSubmit() {
     this.submitted = true;
-    if (this.contactForm.invalid) {
-      return
-    }
+    this.comment.push(this.contactForm.value)
     console.log(this.contactForm.value);
   }
-
-
-
 }
 
 
